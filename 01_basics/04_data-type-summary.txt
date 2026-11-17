@@ -1,0 +1,22 @@
+
+Data Types:
+    1. Primitive
+        - Int 
+        - BigInt
+        - String
+        - Boolean
+        - Boolean
+        - Null
+        - Undefined
+        - Symbol
+
+    2. Non-Primitive (Reference)
+        - Array
+        - Objects
+        - Functions
+
+** Javascript is  a dynamcally typed language 
+    - bcz variable types are determined and checked at runtime.
+    - Flexible reassignment
+    - No explicit type declaration
+    

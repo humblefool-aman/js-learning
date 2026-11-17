@@ -58,7 +58,8 @@ let order = null;
 const id1 = Symbol();
 const id2 = Symbol();
 
-// Object - we will see in later code snippets
+
+// typeof - returns a string indicating the type of the unevaluated operand.
 
 console.log( typeof length );        // number
 console.log( typeof isOpen );        // boolean
@@ -68,3 +69,47 @@ console.log( typeof id1 );        // symbol
 
 console.log( typeof "aman" );        // string
 
+
+// Special Cases
+console.log(typeof null);      // object
+console.log(typeof undefined); // undefined
+console.log(typeof NaN);       // number
+
+
+
+//-------------------------------------------------------------------------------------
+
+// Objects - stores data in key-value pairs.
+//  A key (also called a property) is always a string, and the value can be any data type, including another object.
+
+// Object
+let person = {
+    name: "John",
+    age: 30,
+    isStudent: false
+};
+console.log(person.name); // John
+console.log(person.age); // 30
+console.log(person.isStudent); // false
+
+// Array
+let fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits[0]); // Apple
+console.log(fruits[1]); // Banana
+console.log(fruits[2]); // Orange
+
+// Function
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("Alice")); // Hello, Alice!
+
+// Date
+let currentDate = new Date();
+console.log(currentDate); // current date and time
+
+
+console.log(typeof person); // object
+console.log(typeof fruits); // object
+console.log(typeof greet);  // function 
+console.log(typeof currentDate); // object
